@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Wepgcomp.Api",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build:Wepgcomp.Api",
+      "program": "${workspaceFolder}/src/Wepgcomp.Api/bin/Debug/netcoreapp3.1/Wepgcomp.Api.dll",
+      "args": ["--urls", "http://localhost:5000"],
+      "cwd": "${workspaceFolder}/src/Wepgcomp.Api",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+        "uriFormat": "%s/docs/index.html"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    }
+  ]
+}
