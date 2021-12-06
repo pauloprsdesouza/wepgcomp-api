@@ -26,13 +26,14 @@ namespace Wepgcomp.Api
             })
             .AddJsonOptions(options => options.JsonSerializerOptions.Default());
 
-            //services.AddSwaggerDocumentation();
+            services.AddSwaggerDocumentation();
+
             services.AddScoped<ApiDBContext>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //app.UseSwaggerDocumentation();
+            app.UseSwaggerDocumentation();
 
             app.UseRouting();
 

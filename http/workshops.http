@@ -1,0 +1,36 @@
+@workshopId = 6
+
+GET {{baseUrl}}/workshops
+Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/workshops/{{workshopId}}
+Content-Type: application/json
+
+###
+
+POST {{baseUrl}}/workshops
+Content-Type: application/json
+
+{
+  "title": "WEPGCOMP 2022",
+  "startDate": "08/11/2022",
+  "endDate": "11/11/2022"
+}
+
+###
+
+PUT {{baseUrl}}/workshops/{{workshopId}}
+Content-Type: application/json
+
+{
+  "title": "WEPGCOMP 2022",
+  "startDate": "2022-11-08T08:20:00",
+  "endDate": "2022-11-10T17:00:00"
+}
+
+###
+
+DELETE {{baseUrl}}/workshops/{{workshopId}}
+Content-Type: application/json

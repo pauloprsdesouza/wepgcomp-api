@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Wepgcomp.Api.Infrastructure.Database.DataModel.Models.Workshop
+namespace Wepgcomp.Api.Infrastructure.Database.DataModel.Models.Workshops
 {
     public static class WorkshopMap
     {
@@ -23,6 +23,10 @@ namespace Wepgcomp.Api.Infrastructure.Database.DataModel.Models.Workshop
 
             workshop.Property(p => p.EndDate)
                     .HasColumnName("end_date");
+
+            workshop.HasMany(p => p.Sessions)
+                    .WithOne(p => p.WorkShop)
+                    .HasForeignKey(p => p.IdWorkshop);
         }
     }
 }

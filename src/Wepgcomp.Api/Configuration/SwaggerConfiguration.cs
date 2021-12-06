@@ -8,15 +8,15 @@ namespace Wepgcomp.Api.Configuration
 {
     public static class SwaggerConfiguration
     {
-        const string Title = "Store Library";
-        const string Description = "A Store Library Rest API Example.";
+        const string Title = "Wepgcomp";
+        const string Description = "Wepgcomp Rest API Documentation.";
         const string Version = "v1";
 
         public static void AddSwaggerDocumentation(this IServiceCollection services)
         {
             services.AddSwaggerGen(options =>
             {
-                var xmlComments = Path.Combine(AppContext.BaseDirectory, "Store.Library.xml");
+                var xmlComments = Path.Combine(AppContext.BaseDirectory, "Wepgcomp.Api.xml");
 
                 options.SwaggerDoc(Version, new OpenApiInfo
                 {
