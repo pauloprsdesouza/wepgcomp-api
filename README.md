@@ -1,25 +1,31 @@
-# WEPGCOMP API
+# Wepgcomp Api
 
-REST API for managing workshop data used in the UFBA WEPGCOMP event context.
+[![License](https://img.shields.io/github/license/pauloprsdesouza/wepgcomp-api)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/pauloprsdesouza/wepgcomp-api)](https://github.com/pauloprsdesouza/wepgcomp-api/commits)
+[![Top Language](https://img.shields.io/github/languages/top/pauloprsdesouza/wepgcomp-api)](https://github.com/pauloprsdesouza/wepgcomp-api)
 
-## What this repository contains
-- ASP.NET Core API project for workshop operations
-- Request/response models, validation filters, and error handling
-- Swagger/OpenAPI setup for API exploration
+## Overview
+This repository contains a .NET Core REST API
 
-## Tech stack
+## Tech Stack
+- C#
 - C# / .NET
-- ASP.NET Core Web API
 
-## Project structure
-- `src/` - API solution and main application code
-- `http/` - local HTTP request samples
+## Repository Structure
+- `src/` - main source code
+- `http/` - local API request samples
 
-## Getting started
-1. Install .NET SDK compatible with the project.
-2. Restore dependencies from the solution in `src/`.
-3. Run the API from the API project folder.
-4. Open Swagger UI from the local URL printed in terminal.
+## Quick Start
+1. Install a compatible .NET SDK.
+2. Restore dependencies from the solution/project.
+3. Build and run locally.
 
-## Notes
-This is a learning/reference project and may require environment-specific adjustments.
+## Validation
+- Run local build and tests where available.
+- Validate main workflows/endpoints before opening pull requests.
+
+## Contributing
+See `CONTRIBUTING.md` for contribution and PR guidelines.
+
+## Status
+Actively maintained by Paulo Roberto de Souza.
